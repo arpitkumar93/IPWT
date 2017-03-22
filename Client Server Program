@@ -1,0 +1,39 @@
+<html>
+<head>
+<body>
+<style>
+.center 
+{
+    margin: auto;
+    width:30%;
+    padding:10px;
+    border:5px solid black;
+    border-radius: 50px;
+
+}
+</style>
+<div class="center">
+<center><h1><u>Student Details</u></h1></center>
+<form action="process.php" method="POST">
+<pre>
+	Name:    <input type="text" name="name">
+
+
+	Dept:    <input type="text" name="dept">
+
+
+	Reg:     <input type="number" name="Reg">
+
+
+	DOB:     <input type="date" name="bday">
+
+
+	Address  <input type="text" name="addr">
+
+
+		     <input type="submit" value="submit">
+</pre>
+</form>
+</body>
+</head>
+</html>
