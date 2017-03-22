@@ -1,0 +1,7 @@
+<?php
+	echo "Hello my name is ", $_POST['name'];
+	echo " <br>I am studing in ", $_POST['dept'];
+	echo "<br>My reg.no is ", $_POST['Reg'];
+	echo " <br>Date of Birth is ", $_POST['bday'];
+	echo "<br>My Address is ",$_POST['addr'];
+?>
