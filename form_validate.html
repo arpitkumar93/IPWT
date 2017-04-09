@@ -1,0 +1,49 @@
+<html>
+<head>
+<title> Form Validation</title>
+<h1 align="center"><u>Students Form</u></h1>
+</head>
+<body>
+
+<form action="validation.php" method="get">
+
+<table border="10" align="center" width="45%">
+	<tr>
+		<td> Name</td>
+		<td><input type="text" placeholder="Enter your Name" name="name" required /></td>
+
+	</tr>
+
+	<tr>
+		<td>Address</td>
+		<td><textarea placeholder="Enter your Address"  name="address" required></textarea></td>
+	</tr>
+	
+	<tr>
+		<td> Gender</td>
+		<td><input type="radio" name="gender" />Male<input type="radio" name="gender" required />Female</td>
+	</tr>
+
+	<tr>
+		<td>DOB</td>
+		<td><input type="date" name="pday" required />
+	</tr>
+
+	<tr>
+		<td>Email</td>
+		<td><input type="email" placeholder="Enter your Email Id" name="email" required /></td>
+	</tr>
+
+	<tr>
+		<td>Mobile No</td>
+		<td><input type="number" placeholder="Enter your mobile no" name="mobile" required /></td>
+	</tr>
+
+	<tr>
+		<td colspan="2" align="center"><input type="submit" value="Submit"/></td>
+	</tr>
+</table>
+</form>
+
+</body>
+</html>
