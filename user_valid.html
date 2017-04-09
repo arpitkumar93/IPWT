@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form validaton</title>
+<script>
+	function validate()
+	{
+		var name = document.myform.name.value;
+		var addr = document.myform.addr.value;
+		var email = document.myform.email.value;
+		var city = document.myform.city.value;
+		var country= document.myform.country.value;
+
+
+		if (name=="")
+		{
+			alert("Name should not be null");
+			return false;
+		}
+		if (!/^[a-zA-Z]*$/g.test(document.myform.name.value))
+		{
+			alert("Enter only alphabets in name");
+			return false;
+		}
+
+		if (addr=="")
+		{
+			alert("Please fill the address");
+			return false;
+		}
+		if (!/^[a-zA-Z]*$/g.test(document.myform.addr.value))
+		{
+			alert("Enter only alphabets in address");
+			return false;
+		}
+
+		if (email=="")
+		{
+			alert("Enter Email");
+			return false;
+		}
+		if (!/^[a-zA-Z@]*$/g.test(document.myform.email.value))
+		{
+			alert("Enter valid Email");
+			return false;
+		}
+
+		if (city=="")
+		{
+			alert("Please fill the city");
+			return false;
+		}
+		if (!/^[a-zA-Z]*$/g.test(document.myform.city.value))
+		{
+			alert("Enter only alphabets in city field");
+			return false;
+		}
+
+		if (country=="")
+		{
+			alert("Please fill the country");
+			return false;
+		}
+		if (!/^[a-zA-Z]*$/g.test(document.myform.country.value))
+		{
+			alert("Enter only alphabets in country field");
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+<h1><center><u>Student Registration Form</u></center></h1>
+<form name="myform" method="post" onsubmit="return validate()">
+<table border="2" align="center" width="30%">
+	<tr>
+		<td>Name</td>
+		<td><input type="text" name="name">
+	</tr>
+
+	<tr>
+		<td>Address</td>
+		<td><input type="text" name="addr">
+	</tr>
+
+	<tr>
+		<td>Email</td>
+		<td><input type="email" name="email">
+	</tr>
+
+	<tr>
+		<td>City</td>
+		<td><input type="text" name="city">
+	</tr>
+
+	<tr>
+		<td>Country</td>
+		<td><input type="text" name="country">
+	</tr>
+
+	<tr>
+		<td colspan="2" align="center"><input type="submit" value="submit"></td>
+	</tr>
+</table>
+	
+</form>
+</body>
+</html>
